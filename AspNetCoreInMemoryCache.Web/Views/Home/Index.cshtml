@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<CustomerEntity>
+<div class="text-center">
+    @Html.ActionLink("Add customer", "Create");
+    <h1 class="display-4">Customer List</h1>
+    @if (Model == null)
+    {
+        <p>No customers found</p>
+    }
+    else
+    {
+        <ul>
+            @foreach (var customer in Model)
+            {
+                <li>@customer.FirstName @customer.LastName</li>
+            }
+        </ul>
+    }
+    <p>Last Updated: @DateTime.Now.ToString()</p>
+</div>
