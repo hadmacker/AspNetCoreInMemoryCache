@@ -4,7 +4,7 @@
 
 # Getting Started
 
-* This proof of concept is intended to allow for easy entry of KVP data into an Azure Table and allow for rapid lookup of this data using an in-memory cache.
+* This proof of concept is intended to allow for easy entry of data into an Azure Table and allow for rapid lookup of this data using an in-memory cache.
 * Create an Azure Storage Account and add an environment variable with the name `ancimcstorage` with value of the `Connection String`.
 
 # Hosting & Resources
